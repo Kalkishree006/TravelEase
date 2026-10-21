@@ -1,0 +1,41 @@
+.hotel-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.hotel-cancel-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 13px;
+  border: 1px solid #e5caca;
+  border-radius: 10px;
+  background: #fff7f7;
+  color: #b42318;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.hotel-cancel-button:hover {
+  background: #feecec;
+  border-color: #d9a5a5;
+}
+
+@media (max-width: 700px) {
+  .hotel-actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hotel-book-button,
+  .hotel-cancel-button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

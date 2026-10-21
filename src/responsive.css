@@ -1,0 +1,446 @@
+/* =========================================================
+   TRAVELEASE RESPONSIVE FIX
+   Existing App.css is NOT modified
+   ========================================================= */
+
+/* ---------- MOBILE NAVBAR ---------- */
+
+.mobile-menu-button {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #172033;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.mobile-nav-menu {
+  display: none;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .navbar-inner {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .navbar-links {
+    gap: 12px !important;
+  }
+
+  .nav-link {
+    font-size: 12px !important;
+  }
+
+  .navbar-actions {
+    gap: 8px !important;
+  }
+
+  .navbar-login {
+    font-size: 12px !important;
+  }
+
+  .navbar-cta {
+    font-size: 12px !important;
+    padding: 9px 13px !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  /* ---------- NAVBAR ---------- */
+
+  .travel-navbar {
+    width: 100%;
+  }
+
+  .navbar-inner {
+    min-height: 68px !important;
+    height: auto !important;
+    padding: 10px 16px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 10px !important;
+  }
+
+  .travel-logo {
+    flex-shrink: 0;
+  }
+
+  .travel-logo span {
+    font-size: 16px !important;
+  }
+
+  .logo-icon {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  /* Hide desktop navigation */
+  .navbar-links {
+    display: none !important;
+  }
+
+  /* Hide desktop right actions */
+  .navbar-actions {
+    display: none !important;
+  }
+
+  /* Show hamburger */
+  .mobile-menu-button {
+    display: flex !important;
+    flex-shrink: 0;
+  }
+
+  /* ---------- MOBILE DROPDOWN MENU ---------- */
+
+  .mobile-nav-menu {
+    position: absolute;
+    top: 68px;
+    left: 12px;
+    right: 12px;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px;
+
+    background: #ffffff;
+    border: 1px solid #e8ebf0;
+    border-radius: 16px;
+
+    box-shadow: 0 15px 35px rgba(20, 30, 50, 0.12);
+  }
+
+  .mobile-nav-menu .nav-link {
+    width: 100%;
+    min-height: 44px;
+
+    display: flex !important;
+    align-items: center;
+
+    padding: 10px 12px;
+
+    border-radius: 10px;
+
+    font-size: 14px !important;
+    color: #172033;
+    text-decoration: none;
+  }
+
+  .mobile-nav-menu .nav-link:hover,
+  .mobile-nav-menu .nav-link.active {
+    background: #eef4ff;
+    color: #245dcc;
+  }
+
+  .mobile-nav-menu .nav-link svg {
+    margin-right: 7px;
+  }
+
+  .mobile-menu-divider {
+    height: 1px;
+    background: #edf0f4;
+    margin: 6px 4px;
+  }
+
+  .mobile-menu-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 4px 0 0;
+  }
+
+  .mobile-menu-actions a {
+    width: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .mobile-my-trips {
+    padding: 11px 14px;
+    border: 1px solid #e2e6ed;
+    border-radius: 10px;
+    color: #172033;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .mobile-book-trip {
+    padding: 11px 14px;
+    border-radius: 10px;
+    background: #2f63d8;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+
+  /* =======================================================
+     HOME PAGE
+     ======================================================= */
+
+  .home-page {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .home-hero {
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+    padding-top: 55px !important;
+    padding-bottom: 35px !important;
+
+    gap: 32px !important;
+  }
+
+  .hero-content {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .hero-badge {
+    font-size: 13px !important;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(40px, 11vw, 58px) !important;
+    line-height: 1.04 !important;
+    letter-spacing: -1.5px !important;
+  }
+
+  .hero-content p {
+    max-width: 100% !important;
+    font-size: 16px !important;
+    line-height: 1.65 !important;
+  }
+
+  .hero-buttons {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  .hero-primary,
+  .hero-secondary {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    justify-content: center !important;
+  }
+
+
+  /* ---------- QUICK SEARCH ---------- */
+
+  .hero-search-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+
+    padding: 22px !important;
+  }
+
+  .search-card-header h3 {
+    font-size: 22px !important;
+  }
+
+  .search-fields {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  .search-field {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .search-arrow {
+    transform: rotate(90deg);
+    align-self: center;
+  }
+
+  .search-field select {
+    font-size: 15px !important;
+  }
+
+  .search-button {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    justify-content: center !important;
+  }
+
+
+  /* ---------- QUICK STATS ---------- */
+
+  .home-stats {
+    width: 100% !important;
+    box-sizing: border-box !important;
+
+    grid-template-columns: 1fr 1fr !important;
+
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+
+    gap: 10px !important;
+  }
+
+  .stat-card {
+    min-width: 0 !important;
+    padding: 15px !important;
+  }
+
+  .stat-card strong {
+    font-size: 13px !important;
+  }
+
+  .stat-card span {
+    font-size: 11px !important;
+  }
+
+
+  /* ---------- FEATURES ---------- */
+
+  .home-features {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  .section-heading h2 {
+    font-size: 30px !important;
+    line-height: 1.15 !important;
+  }
+
+  .section-heading p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  .feature-card {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+
+  /* ---------- CTA ---------- */
+
+  .home-cta {
+    margin-left: 18px !important;
+    margin-right: 18px !important;
+
+    padding: 28px 22px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+
+    gap: 22px !important;
+  }
+
+  .home-cta h2 {
+    font-size: 30px !important;
+    line-height: 1.15 !important;
+  }
+
+  .home-cta p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+
+  .cta-button {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    justify-content: center !important;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .navbar-inner {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  .mobile-nav-menu {
+    left: 10px;
+    right: 10px;
+  }
+
+  .home-hero {
+    padding-top: 42px !important;
+  }
+
+  .hero-content h1 {
+    font-size: 42px !important;
+  }
+
+  .hero-content p {
+    font-size: 15px !important;
+  }
+
+  .hero-search-card {
+    padding: 18px !important;
+  }
+
+  .search-card-header h3 {
+    font-size: 20px !important;
+  }
+
+  .home-stats {
+    grid-template-columns: 1fr !important;
+  }
+
+  .stat-card {
+    padding: 14px !important;
+  }
+
+  .section-heading h2 {
+    font-size: 27px !important;
+  }
+
+  .home-cta {
+    padding: 24px 18px !important;
+  }
+
+  .home-cta h2 {
+    font-size: 27px !important;
+  }
+
+}
